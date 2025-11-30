@@ -329,7 +329,7 @@
 .contact-map {
     flex: 1;
     min-width: 320px;
-    height: 500px;
+    height: 540px;
     animation: fadeInSec 1.2s .4s backwards;
 }
 .contact-map iframe {
@@ -463,3 +463,4 @@
     .social-section {padding: 18px 4px;}
 
 }
+
