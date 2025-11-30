@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brochure 2025 - RRV Y ASOCIADOS</title>
+    <link rel="stylesheet" href="brochure.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="brochure.html" class="active">Brochure</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="bro-main">
+        <section class="bro-section">
+            <h1 class="bro-title">Brochure 2025</h1>
+            <hr class="bro-hr">
+            <div class="bro-download">
+                <a href="https://acrobat.adobe.com/id/urn%3Aaaid%3Asc%3AUS%3Ab9653aaa-5ec2-42a7-939a-3c74e17433a5/?x_api_client_id=chrome_extension_viewer&bookmarkAcrobat=true&x_api_client_location=bookmark&theme=dark&filetype=application%2Fpdf&viewer%21megaVerb=group-discover" target="_blank" class="bro-pdf">Descargar PDF <span>&#8250;</span></a>
+            </div>
+            <div class="bro-slider">
+                <div class="bro-slide active">
+                    <img src="img/brochure-portada.png" alt="Brochure Portada" class="bro-portada">
+                </div>
+                <div class="bro-slide">
+                    <img src="img/quienes-somos.png" alt="Quienes Somos" class="bro-portada">
+                </div>
+                <div class="bro-slide">
+                    <img src="img/servicios1.png" alt="Servicios 1" class="bro-portada">
+                </div>
+                <div class="bro-slide">
+                    <img src="img/servicios2.png" alt="Servicios 2" class="bro-portada">
+                </div>
+                <div class="bro-slide">
+                    <img src="img/capacitaciones.png" alt="Capacitaciones" class="bro-portada">
+                </div>
+                <div class="bro-slide">
+                    <img src="img/contacto.png" alt="Contacto" class="bro-portada">
+                </div>
+            </div>
+            <div class="bro-nav bottom">
+                <button class="bro-nav-prev">&lt; Previo</button>
+                <span class="bro-nav-sep">|</span>
+                <span class="bro-page-indicator">1/6</span>
+                <span class="bro-nav-sep">|</span>
+                <button class="bro-nav-next">Siguiente &gt;</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-section">
+        <p>Copyright © 2025 RRV Y ASOCIADOS - Todos los derechos reservados.</p>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+    // Slider JS
+    document.addEventListener("DOMContentLoaded", function(){
+        const slides = document.querySelectorAll('.bro-slide');
+        const prevBtn = document.querySelector('.bro-nav-prev');
+        const nextBtn = document.querySelector('.bro-nav-next');
+        const indicator = document.querySelector('.bro-page-indicator');
+        let active = 0;
+        function showSlide(idx) {
+            slides.forEach((s,i) => s.classList.toggle('active', i === idx));
+            indicator.textContent = (idx+1) + '/' + slides.length;
+        }
+        prevBtn.addEventListener('click', function(){
+            active = (active === 0) ? slides.length-1 : active-1;
+            showSlide(active);
+        });
+        nextBtn.addEventListener('click', function(){
+            active = (active === slides.length-1) ? 0 : active+1;
+            showSlide(active);
+        });
+        showSlide(active);
+    });
+    </script>
+</body>
+</html>
