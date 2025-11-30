@@ -8,14 +8,12 @@
     --nav-bar-bg: white;
 }
 
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===== NAVBAR llamativo + animación ===== */
 .navbar {
     width: 100%;
     height: 80px;
@@ -45,7 +43,6 @@
     100%{ transform: scale(1) rotate(0deg);}
 }
 
-/* Navbar links animación + efecto underline */
 .navbar ul {
     display: flex;
     list-style: none;
@@ -102,8 +99,6 @@
     transform: scaleX(1);
 }
 
-
-/* ====== Banner principal fadeIn ====== */
 .banner {
     position: relative;
     height: 770px;
@@ -162,7 +157,6 @@
     animation: fadeInSec 1s 0.5s backwards;
 }
 
-/* Botones animados */
 .btn-primary, .btn-anim, .sn-boton {
     padding: 13px 40px;
     background: var(--accent-color);
@@ -190,7 +184,6 @@
     transform: scale(1.08) rotate(-1deg);
 }
 
-/* ========== SOBRE NOSOTROS sección ========== */
 .sobre-nosotros {
     display: flex;
     justify-content: center;
@@ -231,7 +224,6 @@
     animation: fadeInSec 1s 0.25s backwards;
 }
 
-/* ========== VALORES sección ========== */
 .valores {
     background: var(--accent-color);
     color: white;
@@ -297,7 +289,6 @@
     line-height: 1.6;
 }
 
-/* =============== CONTACTO ANIMADO =============== */
 .contact-section {
     display: flex;
     flex-wrap: wrap;
@@ -348,7 +339,6 @@
     box-shadow: 0 4px 22px rgba(217,108,33,0.13);
 }
 
-/* =============== SOCIAL ANIMADO =============== */
 .social-section {
     padding: 60px 70px;
     text-align: center;
@@ -397,7 +387,6 @@
     color: #fff;
 }
 
-/* FOOTER */
 .footer-section {
     background: #181818;
     padding: 47px;
@@ -411,7 +400,6 @@
     letter-spacing: 1px;
 }
 
-/* ======== RESPONSIVE ======== */
 @media (max-width: 980px) {
     .navbar {
         padding: 0 15px;
@@ -473,4 +461,5 @@
     .contact-info {padding: 18px 9px;}
     .contact-map {height: 180px;}
     .social-section {padding: 18px 4px;}
+
 }
