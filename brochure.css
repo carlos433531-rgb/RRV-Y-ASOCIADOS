@@ -8,14 +8,12 @@
     --nav-bar-bg: white;
 }
 
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* NAVBAR igual */
 .navbar {
     width: 100%;
     height: 80px;
@@ -96,7 +94,6 @@
     transform: scaleX(1);
 }
 
-/* MAIN SECTION */
 .bro-main {
     margin-top: 95px;
     margin-bottom: 40px;
@@ -116,7 +113,6 @@
     100%{opacity:1;transform:none;}
 }
 
-/* Título y línea */
 .bro-title {
     font-size: 2.15rem;
     font-weight: bold;
@@ -129,7 +125,6 @@
     margin: 0 0 29px 0;
 }
 
-/* PDF download link */
 .bro-download {
     width: 100%;
     text-align: right;
@@ -153,7 +148,6 @@
     color: var(--accent-color);
 }
 
-/* Slider principal */
 .bro-slider {
     position: relative;
     max-width: 1200px;
@@ -186,7 +180,6 @@
     display: block;
 }
 
-/* Navegación del brochure */
 .bro-nav {
     text-align: center;
     font-size: 2.18rem;
@@ -217,7 +210,6 @@
     font-weight: 600;
 }
 
-/* FOOTER */
 .footer-section {
     background: #181818;
     padding: 47px;
@@ -230,7 +222,6 @@
     letter-spacing: 1px;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
     .navbar {
         padding: 0 15px;
@@ -243,4 +234,5 @@
     .bro-img-row {margin-bottom: 18px;}
     .bro-portada {max-width: 100%;border-width:2px;}
     .bro-slider {min-height:220px;}
+
 }
