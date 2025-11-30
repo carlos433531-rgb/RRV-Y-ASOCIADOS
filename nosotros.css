@@ -8,14 +8,12 @@
     --nav-bar-bg: white;
 }
 
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===== NAVBAR llamativo + animación ===== */
 .navbar {
     width: 100%;
     height: 80px;
@@ -45,7 +43,6 @@
     100%{ transform: scale(1) rotate(0deg);}
 }
 
-/* Navbar links animación + efecto underline */
 .navbar ul {
     display: flex;
     list-style: none;
@@ -202,7 +199,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* ---- Lista de Capacitaciones ---- */
 .nos-capacitaciones {
     margin-top: 18px;
     padding: 32px 0 12px 0;
@@ -243,7 +239,7 @@ body {
     color: var(--accent-color);
     font-weight: bold;
 }
-/* =============== CONTACTO ANIMADO =============== */
+
 .contact-section {
     display: flex;
     flex-wrap: wrap;
@@ -295,7 +291,6 @@ body {
     box-shadow: 0 4px 22px rgba(217,108,33,0.13);
 }
 
-/* =============== SOCIAL ANIMADO =============== */
 .social-section {
     padding: 60px 70px;
     text-align: center;
@@ -344,7 +339,6 @@ body {
     color: #fff;
 }
 
-/* Responsive */
 @media (max-width: 850px) {
     .nos-section {
         padding: 20px 5vw 28px 5vw;
@@ -360,4 +354,5 @@ body {
     }
     .nos-title { font-size: 1.3rem; }
     .nos-capacitaciones {padding: 20px 0 8px 0;}
+
 }
